@@ -7,8 +7,4 @@ document.addEventListener("DOMContentLoaded", () => {
       link.style.transform = 'perspective(300px) rotateY(15deg)';
     });
 
-    link.addEventListener('mouseleave', () => {
-      link.style.transform = 'perspective(300px) rotateY(0deg)';
-    });
-  });
-});
+    link.add
