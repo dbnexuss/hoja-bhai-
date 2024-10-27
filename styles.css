@@ -22,9 +22,10 @@ header {
 }
 
 .logo h1 {
-    font-size: 3rem; /* Large size for the name "DB Nexus" */
+    font-size: 2.5rem; /* Smaller size for the name "DB Nexus" */
     color: #ff2d55; /* Pink color for the logo */
     text-shadow: 0 4px 10px rgba(255, 45, 85, 0.5); /* 3D effect */
+    margin-left: 20px; /* Shifted to the left */
 }
 
 nav ul {
@@ -86,16 +87,14 @@ nav ul li a:hover {
 }
 
 h1 {
-    font-size: 3.5rem; /* Large headline */
+    font-size: 3rem; /* Headline size */
     margin: 0 0 20px; /* Space below */
     color: #ff2d55; /* Pink color for the headline */
     text-shadow: 0 4px 10px rgba(255, 45, 85, 0.7); /* 3D effect */
 }
 
-p {
-    font-size: 1.5rem; /* Subheadline size */
-    margin: 0 0 30px; /* Space below */
-    color: #f0f0f0; /* Light grey color for subheadline */
+.highlight {
+    font-weight: bold; /* Bold highlight for DB Nexus */
 }
 
 .hero-cta-button {
