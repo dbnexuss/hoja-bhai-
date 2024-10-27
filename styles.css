@@ -139,9 +139,13 @@ header {
 
 /* Services Section Styling */
 .services {
-  background-color: #1a1a1a; /* Dark background for the services section */
   padding: 50px 0;
   text-align: center;
+}
+
+.services h2 {
+  color: #ff4081; /* Pink for services title */
+  margin-bottom: 30px;
 }
 
 .service-card {
@@ -232,10 +236,59 @@ header {
   color: #dddddd; /* Light gray for description */
 }
 
+/* About Us Section Styling */
+.about-us {
+  background-color: #000000; /* Black background */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-us h2 {
+  color: #ff4081; /* Pink for heading */
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Size to match the overall design */
+}
+
+.about-us p {
+  color: #dddddd; /* Light gray for description */
+  font-size: 1rem;
+  margin: 20px auto;
+  max-width: 800px; /* Center text with max width */
+}
+
+.team {
+  display: flex;
+  justify-content: center; /* Center team members */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.team-member {
+  margin: 15px;
+  text-align: center; /* Center text in team member card */
+}
+
+.team-member img {
+  border-radius: 50%; /* Round images for team members */
+  margin-bottom: 10px;
+  width: 150px; /* Fixed size for team member images */
+  height: 150px; /* Fixed size for team member images */
+}
+
 /* Responsive Design for Services Section */
 @media (max-width: 768px) {
   .service-card {
     width: 80%; /* Full width on smaller screens */
+  }
+}
+
+/* Responsive Design for Team Section */
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column; /* Stack team members vertically */
+  }
+
+  .team-member {
+    margin: 20px 0; /* Margin adjustment for vertical layout */
   }
 }
 
