@@ -1,155 +1,157 @@
-/* Reset styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #000000; /* Black background */
-  color: #ffffff; /* White text for contrast */
-  overflow-x: hidden;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: white;
 }
 
-/* Header Styling */
 header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: #1a1a1a; /* Slightly lighter black for header */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-  z-index: 999;
+    background-color: black;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Logo */
-.logo a {
-  font-size: 2.5rem; /* Increased font size for DB Nexus */
-  font-weight: bold;
-  color: #ff4081; /* Bright pink color for the logo */
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 3px;
-  transition: transform 0.3s ease, color 0.3s ease;
+.logo h1 {
+    font-size: 3rem; /* Large size for the name "DB Nexus" */
+    color: #ff2d55; /* Pink color for the logo */
+    text-shadow: 0 4px 10px rgba(255, 45, 85, 0.5); /* 3D effect */
 }
 
-.logo a:hover {
-  transform: perspective(200px) rotateX(20deg);
-  color: #ff77a9; /* Lighter pink on hover */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation Menu */
-.nav-links {
-  list-style: none;
-  display: flex;
+nav ul li {
+    margin: 0 15px;
 }
 
-.nav-links li {
-  margin-left: 30px;
+nav ul li a {
+    text-decoration: none;
+    color: #ff2d55; /* Pink color for navigation links */
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
 }
 
-.nav-links li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease, transform 0.3s ease;
-  text-transform: uppercase;
+nav ul li a:hover {
+    transform: translateY(-2px); /* Hover effect */
+    color: #ff5b7f; /* Lighter pink on hover */
 }
 
-.nav-links li a:hover {
-  color: #ff4081; /* Pink on hover */
-  transform: perspective(300px) translateZ(10px); /* 3D effect on hover */
-}
-
-/* CTA Button */
-.cta-btn {
-  padding: 10px 25px;
-  background-color: #ff4081; /* Bright pink color */
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 30px;
-  text-transform: uppercase;
-  box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cta-btn:hover {
-  transform: perspective(300px) translateZ(10px) scale(1.1); /* 3D pop-out effect */
-  box-shadow: 0 10px 20px rgba(255, 64, 129, 0.6); /* Stronger shadow on hover */
-}
-
-/* Hero Section Styling */
-.hero {
-  height: 100vh; /* Full viewport height */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
-    ),
-    url('https://example.com/your-background-image.jpg') center/cover no-repeat;
-  /* Replace the URL with your own background image */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 3.5rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
-.hero-content h1 span {
-  color: #ff4081; /* Pink color for 'DB Nexus' */
-  font-weight: bold;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  color: #dddddd;
-  margin-bottom: 40px;
-}
-
-.hero-content .cta-btn {
-  padding: 15px 30px;
-  background-color: #ff4081; /* Pink button */
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  border-radius: 30px;
-  text-transform: uppercase;
-  box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-content .cta-btn:hover {
-  transform: perspective(300px) translateZ(10px) scale(1.1);
-  box-shadow: 0 10px 20px rgba(255, 64, 129, 0.6);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .hero-content .cta-btn {
-    font-size: 1rem;
+.cta-button {
+    background-color: #ff2d55; /* Pink background */
+    color: white; /* White text */
     padding: 10px 20px;
-  }
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05); /* 3D scaling effect on hover */
+    background-color: #ff5b7f; /* Lighter pink on hover */
+}
+
+#hero {
+    position: relative;
+    height: 100vh; /* Full height */
+    background-image: url('path/to/your/image.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    display: flex; /* Center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+.hero-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+h1 {
+    font-size: 3.5rem; /* Large headline */
+    margin: 0 0 20px; /* Space below */
+    color: #ff2d55; /* Pink color for the headline */
+    text-shadow: 0 4px 10px rgba(255, 45, 85, 0.7); /* 3D effect */
+}
+
+p {
+    font-size: 1.5rem; /* Subheadline size */
+    margin: 0 0 30px; /* Space below */
+    color: #f0f0f0; /* Light grey color for subheadline */
+}
+
+.hero-cta-button {
+    background-color: #ff2d55; /* Pink background for button */
+    color: white; /* White text */
+    padding: 15px 30px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: transform 0.3s, background-color 0.3s; /* Transition effects */
+}
+
+.hero-cta-button:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    background-color: #ff5b7f; /* Lighter pink on hover */
+}
+
+#services {
+    background-color: #1a1a1a; /* Dark background for the services section */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-container h2 {
+    color: #ff2d55; /* Pink color for section title */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 0 4px 10px rgba(255, 45, 85, 0.5); /* 3D effect */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between cards */
+    padding: 0 20px;
+}
+
+.service-card {
+    background-color: #282828; /* Dark card background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* 3D effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Initial shadow */
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 10px 30px rgba(255, 45, 85, 0.5); /* Stronger shadow on hover */
+}
+
+.service-card h3 {
+    color: #ff2d55; /* Pink color for service titles */
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #f0f0f0; /* Light grey color for service descriptions */
+    font-size: 1rem;
 }
