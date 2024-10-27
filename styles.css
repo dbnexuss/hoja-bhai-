@@ -97,28 +97,27 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
   text-align: center;
+  padding: 0 20px;
 }
 
 .hero-content h1 {
-  font-size: 4rem; /* Increased size for main heading */
+  font-size: 4rem; /* Large main heading */
 }
 
 .white-text {
-  color: #ffffff; /* White color for the main text */
+  color: #ffffff; /* White for "Transform Your Vision with" */
 }
 
 .pink-text {
-  color: #ff4081; /* Pink for DB Nexus */
-  font-weight: bold; /* Make DB Nexus bolder */
-  font-size: 4.5rem; /* Slightly larger font size */
+  color: #ff4081; /* Pink for "DB Nexus" */
+  font-weight: bold;
 }
 
 .hero-content p {
+  margin: 20px 0;
   font-size: 1.2rem;
   color: #dddddd;
-  margin-bottom: 40px;
 }
 
 /* Services Section */
@@ -128,15 +127,10 @@ header {
 }
 
 .service-card {
-  background-color: #333333; /* Darker card background */
+  background-color: #333333;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
 }
 
 /* Portfolio Section */
@@ -178,7 +172,7 @@ header {
 }
 
 .portfolio-item:hover .overlay {
-  opacity: 1; /* Show overlay on hover */
+  opacity: 1;
 }
 
 /* About Us Section */
@@ -194,26 +188,20 @@ header {
 }
 
 .testimonial-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .testimonial {
-  background-color: #333333; /* Darker background for testimonials */
+  background-color: #333333;
   padding: 20px;
   border-radius: 10px;
-  margin: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.testimonial p {
-  font-style: italic;
 }
 
 /* Call to Action Section */
 .call-to-action {
-  background-color: #ff4081; /* Pink background */
+  background-color: #ff4081;
   color: #ffffff;
   text-align: center;
   padding: 50px 20px;
@@ -226,10 +214,6 @@ header {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.5rem; /* Smaller font size on mobile */
-  }
-
-  .service-card {
-    margin: 10px; /* Less margin on mobile */
+    font-size: 2.5rem;
   }
 }
