@@ -93,8 +93,7 @@ header {
       rgba(0, 0, 0, 0.7), 
       rgba(0, 0, 0, 0.7)
     ),
-    url('https://example.com/your-background-image.jpg') center/cover no-repeat;
-  /* Replace the URL with your own background image */
+    url('https://example.com/your-background-image.jpg') center/cover no-repeat; /* Replace the URL with your own background image */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +137,51 @@ header {
   box-shadow: 0 10px 20px rgba(255, 64, 129, 0.6);
 }
 
+/* Services Section Styling */
+.services {
+  background-color: #1a1a1a; /* Dark background for the services section */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services h2 {
+  color: #ff4081; /* Bright pink for heading */
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Size to match the overall design */
+}
+
+.service-card {
+  background-color: #2a2a2a; /* Darker card background for contrast */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: inline-block; /* Cards aligned horizontally */
+  width: 30%; /* Adjust based on your design needs */
+  transition: transform 0.3s ease; /* For hover effect */
+}
+
+.service-card h3 {
+  color: #ff4081; /* Pink for service titles */
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #dddddd; /* Lighter gray for descriptions */
+  font-size: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Responsive Design for Services Section */
+@media (max-width: 768px) {
+  .service-card {
+    width: 80%; /* Full width on smaller screens */
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content h1 {
@@ -153,4 +197,3 @@ header {
     padding: 10px 20px;
   }
 }
-
