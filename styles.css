@@ -314,3 +314,45 @@ header {
     padding: 10px 20px;
   }
 }
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #ff4081; /* Solid pink background */
+  color: white; /* Contrasting text color */
+  text-align: center;
+  padding: 50px 20px; /* Spacing around the text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  transform: translateZ(0); /* Creates a new layer for better 3D effect */
+}
+
+.cta-section h2 {
+  font-size: 2.5rem; /* Adjust font size for better visibility */
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #ffffff; /* Button background color */
+  color: #ff4081; /* Button text color */
+  padding: 15px 30px; /* Padding around button text */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.2rem;
+  text-decoration: none; /* Remove underline from link */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
+  transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Optional: Add more 3D effects to other sections */
+.service-card, .portfolio-item {
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.service-card:hover, .portfolio-item:hover {
+  transform: translateY(-5px) scale(1.05); /* Slight lift and scale effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
