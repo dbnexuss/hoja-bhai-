@@ -1,0 +1,101 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark theme background */
+  color: #ffffff; /* White text for contrast */
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #1f1f1f; /* Darker background for header */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* Logo */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+  transform: perspective(200px) rotateX(20deg);
+}
+
+/* Navigation Menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+  color: #ff9800; /* Accent color for hover */
+  transform: perspective(300px) translateZ(10px); /* 3D effect on hover */
+}
+
+/* CTA Button */
+.cta-btn {
+  padding: 10px 25px;
+  background-color: #ff9800; /* Accent color */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: perspective(300px) translateZ(10px) scale(1.1); /* 3D pop-out effect */
+  box-shadow: 0 10px 20px rgba(255, 152, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
