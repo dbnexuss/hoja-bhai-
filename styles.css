@@ -93,23 +93,15 @@ header {
       rgba(0, 0, 0, 0.7), 
       rgba(0, 0, 0, 0.7)
     ),
-    url('https://example.com/your-background-image.jpg') center/cover no-repeat; /* Replace the URL with your own background image */
+    url('https://example.com/your-background-image.jpg') no-repeat center center/cover; /* Replace with your image */
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #ffffff;
+  justify-content: center;
   text-align: center;
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
-.hero-content h1 span {
+  font-size: 3rem; /* Increased size for main heading */
   color: #ff4081; /* Pink for highlighted text */
 }
 
@@ -283,6 +275,33 @@ header {
 
 .testimonial:hover {
   transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Call to Action Section Styling */
+.call-to-action {
+  background-color: #ff4081; /* Solid pink background */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  color: #ffffff; /* White text for contrast */
+  margin-bottom: 20px;
+  font-size: 2rem; /* Size for the CTA heading */
+}
+
+.call-to-action .cta-btn {
+  padding: 15px 30px;
+  background-color: #000000; /* Black button */
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-btn:hover {
+  background-color: #ff77a9; /* Lighter pink on hover */
 }
 
 /* Responsive Design for Services Section */
