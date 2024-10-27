@@ -1,4 +1,4 @@
-// JavaScript for 3D hover effects on nav links (Optional)
+// JavaScript for 3D hover effects on nav links
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll('.nav-links li a');
 
