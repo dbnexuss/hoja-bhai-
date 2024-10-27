@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DB Nexus - Video Editing Agency</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DB Nexus</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>DB Nexus</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="#quote" class="cta-button">Get a Quote</a>
+            </div>
+        </div>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="#">DB Nexus</a>
-      </div>
+    <section id="hero">
+        <div class="hero-container">
+            <h1>DB Nexus: Your Vision, Our Craft</h1>
+            <p>Transforming raw footage into stunning stories.</p>
+            <a href="#quote" class="hero-cta-button">Start Your Project</a>
+        </div>
+    </section>
 
-      <!-- Navigation Menu -->
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <section id="services">
+        <div class="services-container">
+            <h2>What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Video Editing</h3>
+                    <p>Transform your raw footage into compelling stories with our professional video editing services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Motion Graphics</h3>
+                    <p>Add dynamic and eye-catching animations to your videos to keep your audience engaged.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Color Grading</h3>
+                    <p>Enhance the visual quality of your videos with professional color grading to set the mood.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Audio Editing</h3>
+                    <p>Ensure crystal-clear audio quality with our expert audio editing services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- CTA Button -->
-      <a href="#" class="cta-btn">Get a Free Quote</a>
-    </div>
-  </header>
+    <script>
+        // Optional: Animate service cards on scroll
+        const serviceCards = document.querySelectorAll('.service-card');
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Transform Your Vision with <span>DB Nexus</span></h1>
-      <p>Professional video editing services to bring your stories to life.</p>
-      <a href="#" class="cta-btn">Get Started Now</a>
-    </div>
-  </section>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
 
-  <script src="script.js"></script>
+        serviceCards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>
