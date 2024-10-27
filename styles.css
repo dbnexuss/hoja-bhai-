@@ -144,14 +144,8 @@ header {
   text-align: center;
 }
 
-.services h2 {
-  color: #ff4081; /* Bright pink for heading */
-  margin-bottom: 30px;
-  font-size: 2.5rem; /* Size to match the overall design */
-}
-
 .service-card {
-  background-color: #2a2a2a; /* Darker card background for contrast */
+  background-color: #2a2a2a; /* Darker background for cards */
   border-radius: 10px;
   padding: 20px;
   margin: 15px;
