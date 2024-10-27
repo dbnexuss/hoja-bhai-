@@ -256,22 +256,51 @@ header {
   max-width: 800px; /* Center text with max width */
 }
 
-.team {
+/* Testimonials Section Styling */
+.testimonials {
+  background-color: #1a1a1a; /* Dark background for testimonials section */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #ff4081; /* Pink for heading */
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Size to match the overall design */
+}
+
+.testimonial-container {
   display: flex;
-  justify-content: center; /* Center team members */
-  flex-wrap: wrap; /* Allow wrapping on small screens */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center testimonials */
+  margin: 0 auto;
+  max-width: 800px; /* Limit max width for better readability */
 }
 
-.team-member {
+.testimonial {
+  background-color: #2a2a2a; /* Dark background for testimonials */
+  border-radius: 10px;
+  padding: 20px;
   margin: 15px;
-  text-align: center; /* Center text in team member card */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  flex: 1 1 250px; /* Flex-grow and shrink for responsive layout */
+  transition: transform 0.3s ease; /* For hover effect */
 }
 
-.team-member img {
-  border-radius: 50%; /* Round images for team members */
-  margin-bottom: 10px;
-  width: 150px; /* Fixed size for team member images */
-  height: 150px; /* Fixed size for team member images */
+.testimonial p {
+  font-size: 1rem;
+  color: #dddddd; /* Light gray for text */
+}
+
+.testimonial h4 {
+  font-size: 1rem;
+  color: #ff4081; /* Pink for client names */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
 /* Responsive Design for Services Section */
@@ -289,6 +318,13 @@ header {
 
   .team-member {
     margin: 20px 0; /* Margin adjustment for vertical layout */
+  }
+}
+
+/* Responsive Design for Testimonials Section */
+@media (max-width: 768px) {
+  .testimonial {
+    margin: 10px 0; /* Reduce margin for smaller screens */
   }
 }
 
