@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #121212; /* Dark theme background */
+  background-color: #000000; /* Black background */
   color: #ffffff; /* White text for contrast */
   overflow-x: hidden;
 }
@@ -17,8 +17,8 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #1f1f1f; /* Darker background for header */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: #1a1a1a; /* Slightly lighter black for header */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   z-index: 999;
 }
 
@@ -31,17 +31,18 @@ header {
 
 /* Logo */
 .logo a {
-  font-size: 1.5rem;
+  font-size: 2.5rem; /* Increased font size for DB Nexus */
   font-weight: bold;
-  color: #ffffff;
+  color: #ff4081; /* Bright pink color for the logo */
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
-  transition: transform 0.3s ease;
+  letter-spacing: 3px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .logo a:hover {
   transform: perspective(200px) rotateX(20deg);
+  color: #ff77a9; /* Lighter pink on hover */
 }
 
 /* Navigation Menu */
@@ -63,26 +64,26 @@ header {
 }
 
 .nav-links li a:hover {
-  color: #ff9800; /* Accent color for hover */
+  color: #ff4081; /* Pink on hover */
   transform: perspective(300px) translateZ(10px); /* 3D effect on hover */
 }
 
 /* CTA Button */
 .cta-btn {
   padding: 10px 25px;
-  background-color: #ff9800; /* Accent color */
+  background-color: #ff4081; /* Bright pink color */
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
   border-radius: 30px;
   text-transform: uppercase;
-  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-btn:hover {
   transform: perspective(300px) translateZ(10px) scale(1.1); /* 3D pop-out effect */
-  box-shadow: 0 10px 20px rgba(255, 152, 0, 0.6);
+  box-shadow: 0 10px 20px rgba(255, 64, 129, 0.6); /* Stronger shadow on hover */
 }
 
 /* Responsive Design */
