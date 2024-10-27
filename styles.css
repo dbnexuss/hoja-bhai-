@@ -86,17 +86,70 @@ header {
   box-shadow: 0 10px 20px rgba(255, 64, 129, 0.6); /* Stronger shadow on hover */
 }
 
+/* Hero Section Styling */
+.hero {
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('https://example.com/your-background-image.jpg') center/cover no-repeat;
+  /* Replace the URL with your own background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #ff4081; /* Pink color for 'DB Nexus' */
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #dddddd;
+  margin-bottom: 40px;
+}
+
+.hero-content .cta-btn {
+  padding: 15px 30px;
+  background-color: #ff4081; /* Pink button */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-content .cta-btn:hover {
+  transform: perspective(300px) translateZ(10px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(255, 64, 129, 0.6);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
 
-  .cta-btn {
-    font-size: 0.9rem;
+  .hero-content p {
+    font-size: 1rem;
   }
 
-  .container {
-    flex-direction: column;
+  .hero-content .cta-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }
